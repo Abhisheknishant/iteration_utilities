@@ -15,6 +15,8 @@ Version 0.11.0 (unreleased)
 - The type of ``Placeholder`` which was previously accessible as
   ``PlaceholderType`` private.
 
+- Improved ``ipartition`` so that the predicate is only evaluated once per item.
+
 
 Version 0.10.1 (2019-11-20)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
