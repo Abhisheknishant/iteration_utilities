@@ -5,6 +5,7 @@ os:
 
 arch:
   - amd64
+  - arm64
 
 python:
   - "3.5"
@@ -17,6 +18,9 @@ python:
 matrix:
   include:
     - python: "3.5"
+      install: CC=clang python -m pip install . --no-deps -vv
+    - arch: arm64
+      python: "3.5"
       install: CC=clang python -m pip install . --no-deps -vv
     - python: "3.8"
       install: CC=clang python -m pip install . --no-deps -vv
